@@ -1,7 +1,5 @@
 {
   "name": "Login Logo",
   "render_readme": true,
-  "zip_release": true,
-  "filename": "login_logo.zip",
   "homeassistant": "2023.1.0"
 }
