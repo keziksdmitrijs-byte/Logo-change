@@ -1,7 +1,0 @@
-reapply_logo:
-  name: Reapply logo
-  description: Regenerate icon files from the stored logo and reapply them.
-
-restore_default_logo:
-  name: Restore default logo
-  description: Restore the original Home Assistant icons from backup.
