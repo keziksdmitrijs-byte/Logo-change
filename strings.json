@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Login Logo",
+        "description": "Upload a PNG image to replace the Home Assistant login/loading screen logo and favicon.",
+        "data": {
+          "logo_upload": "Logo image (PNG)",
+          "patch_frontend": "Also overwrite installed frontend icon files (requires no HA core updates afterwards)"
+        }
+      }
+    },
+    "error": {
+      "upload_failed": "Could not process the uploaded file. Please upload a valid PNG image."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Login Logo",
+        "description": "Upload a new logo image to replace the current one.",
+        "data": {
+          "logo_upload": "New logo image (PNG)",
+          "patch_frontend": "Also overwrite installed frontend icon files"
+        }
+      }
+    }
+  },
+  "services": {
+    "reapply_logo": {
+      "name": "Reapply logo",
+      "description": "Regenerate icon files from the stored logo and reapply them."
+    },
+    "restore_default_logo": {
+      "name": "Restore default logo",
+      "description": "Restore the original Home Assistant icons from backup."
+    }
+  }
+}
